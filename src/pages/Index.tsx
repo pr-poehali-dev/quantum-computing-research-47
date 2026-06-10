@@ -3,9 +3,7 @@ import { HeroSection } from "@/components/HeroSection"
 import { ServicesSection } from "@/components/ServicesSection"
 import { AboutSection } from "@/components/AboutSection"
 import { ProcessSection } from "@/components/ProcessSection"
-import { TestimonialsSection } from "@/components/TestimonialsSection"
-import { PortfolioSection } from "@/components/PortfolioSection"
-import { PricingSection } from "@/components/PricingSection"
+import { CommentsSection } from "@/components/CommentsSection"
 import { ContactSection } from "@/components/ContactSection"
 import { Footer } from "@/components/Footer"
 
@@ -17,9 +15,7 @@ export default function Index() {
       <ServicesSection />
       <AboutSection />
       <ProcessSection />
-      <TestimonialsSection />
-      <PortfolioSection />
-      <PricingSection />
+      <CommentsSection />
       <ContactSection />
       <Footer />
     </main>
