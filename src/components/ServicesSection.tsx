@@ -1,42 +1,42 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Layout, Palette, Code, Share2, Target, Search } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const services = [
   {
-    icon: Layout,
-    title: "Веб-дизайн",
+    icon: "TriangleAlert",
+    title: "Ямы и разбитый асфальт",
     description:
-      "Мы создаем сайты, которые не только визуально привлекательны, но и функциональны, удобны в использовании. В CodeCraft ваш бренд в центре внимания — мы обеспечиваем соответствие онлайн-присутствия целям и ценностям вашего бизнеса.",
+      "Опасные ямы, выбоины и разрушения дорожного покрытия, которые угрожают безопасности водителей и могут повредить автомобиль.",
   },
   {
-    icon: Palette,
-    title: "Графический дизайн",
+    icon: "TrafficCone",
+    title: "Неисправные светофоры",
     description:
-      "От логотипов до постов в соцсетях — мы создаем креативные графические решения, усиливающие ваш бренд. Наши дизайны уникальны и профессиональны, производя нужное впечатление на целевую аудиторию.",
+      "Сломанные или не работающие светофоры, отсутствующие или повреждённые дорожные знаки, создающие аварийные ситуации.",
   },
   {
-    icon: Code,
-    title: "Веб-разработка",
+    icon: "MapPin",
+    title: "Нарушения разметки",
     description:
-      "Мы создаем технически надежные и перспективные сайты. Наша команда обеспечивает надежность, масштабируемость и скорость, помогая вашему бизнесу расти в цифровом пространстве.",
+      "Стёртая, неправильная или отсутствующая дорожная разметка, которая вводит водителей в заблуждение и приводит к нарушениям.",
   },
   {
-    icon: Share2,
-    title: "Соцсети",
+    icon: "Truck",
+    title: "Незаконная парковка",
     description:
-      "Сильное присутствие в социальных сетях сегодня решает многое. Мы поможем создать впечатление с помощью привлекательных визуалов и эффективных стратегий, чтобы ваш бренд оставался заметным.",
+      "Транспортные средства, блокирующие проезд, припаркованные на тротуарах, в запрещённых местах или мешающие движению.",
   },
   {
-    icon: Target,
-    title: "Результат",
+    icon: "Flashlight",
+    title: "Нет освещения",
     description:
-      "В CodeCraft мы нацелены на успех. Наш подход всегда направлен на достижение измеримых результатов, способствующих росту вашего бизнеса. Вместе находим то, что действительно работает.",
+      "Тёмные участки дорог, неработающие фонари и плохая освещённость на пешеходных переходах, повышающие риск аварий.",
   },
   {
-    icon: Search,
-    title: "SEO",
+    icon: "Building2",
+    title: "Другие проблемы",
     description:
-      "Видимость в поиске критически важна. Мы оптимизируем сайт с применением современных SEO-техник, чтобы вы были выше в Google и целевая аудитория легко вас находила.",
+      "Любые иные нарушения и опасные ситуации на дорогах: строительный мусор, незакреплённые ограждения, опасные повороты.",
   },
 ]
 
@@ -47,13 +47,13 @@ export function ServicesSection() {
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto block w-fit">
-          Наша экспертиза
+          Типы нарушений
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          В чем мы <span className="text-primary">сильны</span>
+          О чём можно <span className="text-primary">сообщить</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
-          От концепции до запуска — мы трансформируем ваши цифровые амбиции в мощные онлайн-решения, приносящие результат.
+          Любая проблема на дороге заслуживает внимания. Мы передаём ваши обращения в ответственные службы для оперативного устранения.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
@@ -63,7 +63,7 @@ export function ServicesSection() {
             >
               <CardHeader>
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <service.icon className="h-6 w-6" />
+                  <Icon name={service.icon} fallback="AlertCircle" className="h-6 w-6" />
                 </div>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
               </CardHeader>
