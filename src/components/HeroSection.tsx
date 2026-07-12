@@ -104,7 +104,7 @@ export function HeroSection() {
           </span>
         </h1>
 
-        <p className="text-lg sm:text-xl font-medium text-muted-foreground mb-4 animate-fade-in-up">
+        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-muted-foreground mb-4 animate-fade-in-up text-balance">
           ООО «Чернушинское УТТ»
         </p>
 
