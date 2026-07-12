@@ -105,7 +105,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in-up animate-delay-100 leading-relaxed">
-          Заметили нарушение на дороге? Сообщите об этом — специальные службы получат вашу жалобу и примут меры.
+          Заметили нарушение или опасность? Сообщите об этом — специальные службы получат вашу жалобу и примут меры.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animate-delay-200 mb-12">
