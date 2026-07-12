@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">🚦 #безопасностиЧУТТ</h3>
+            <h3 className="text-xl font-bold mb-4">#безопасностиЧУТТ</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Сервис для водителей, которые хотят сделать дороги безопаснее. © 2025 #безопасностиЧУТТ. Все права защищены.
             </p>
