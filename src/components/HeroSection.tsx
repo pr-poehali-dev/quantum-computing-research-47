@@ -104,6 +104,10 @@ export function HeroSection() {
           </span>
         </h1>
 
+        <p className="text-lg sm:text-xl font-medium text-muted-foreground mb-4 animate-fade-in-up">
+          ООО «Чернушинское УТТ»
+        </p>
+
         <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in-up animate-delay-100 leading-relaxed">
           Заметили нарушение или опасность? Сообщите об этом — специальные службы получат вашу жалобу и примут меры.
         </p>
